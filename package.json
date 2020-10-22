@@ -1,10 +1,10 @@
 {
-  "name": "cordova-plugin-file",
+  "name": "cordova-plugin-file-w10",
   "version": "6.0.2",
-  "description": "Cordova File Plugin",
+  "description": "This is a fork of Cordova File Plugin with fix for Windows10 platform.",
   "types": "./types/index.d.ts",
   "cordova": {
-    "id": "cordova-plugin-file",
+    "id": "cordova-plugin-file-w10",
     "platforms": [
       "android",
       "browser",
@@ -15,10 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/apache/cordova-plugin-file"
-  },
-  "bugs": {
-    "url": "https://github.com/apache/cordova-plugin-file/issues"
+    "url": "git+https://github.com/breminnyi/cordova-plugin-file.git"
   },
   "keywords": [
     "cordova",
@@ -54,5 +51,10 @@
     "eslint-plugin-node": "^5.0.0",
     "eslint-plugin-promise": "^3.5.0",
     "eslint-plugin-standard": "^3.0.1"
+  },
+  "main": "index.js",
+  "directories": {
+    "doc": "doc",
+    "test": "tests"
   }
 }

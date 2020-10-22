@@ -177,8 +177,8 @@ var windowsPaths = {
     cacheDirectory: 'ms-appdata:///temp/',
     tempDirectory: 'ms-appdata:///temp/',
     syncedDataDirectory: 'ms-appdata:///roaming/',
-    applicationDirectory: 'ms-appx:///',
-    applicationStorageDirectory: 'ms-appx:///'
+    applicationDirectory: 'ms-appx-web:///',
+    applicationStorageDirectory: 'ms-appx-web:///'
 };
 
 var AllFileSystems;
@@ -201,7 +201,7 @@ function getAllFS () {
             'application':
             Object.freeze(new WinFS('application', {
                 name: 'application',
-                nativeURL: 'ms-appx:///',
+                nativeURL: 'ms-appx-web:///',
                 winpath: nativePathToCordova(Windows.ApplicationModel.Package.current.installedLocation.path)
             })),
             'root':
